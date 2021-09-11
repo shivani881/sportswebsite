@@ -1,0 +1,371 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+/* navbar section  */
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  background-color: black;
+}
+.left {
+  margin: 10px;
+}
+.left img {
+  width: 60px;
+}
+
+.mid {
+  margin: 20px;
+}
+.mid ul {
+  display: flex;
+  list-style: none;
+}
+.mid ul li {
+  margin: 0 20px;
+}
+.mid ul li a {
+  text-decoration: none;
+  color: white;
+}
+.mid ul li a:hover {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  padding: 8px;
+}
+.btn-right {
+  margin: 2px 14px;
+  background-color: black;
+  color: white;
+  padding: 3px 13px;
+  border: 2px solid grey;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  font-family: "Roboto", cursive;
+}
+.right {
+  margin: 20px;
+}
+.right img {
+  width: 30px;
+  filter: invert(100);
+  position: relative;
+}
+.right #cartcount{
+      color: white;
+      font-size: 0.70rem;
+      background-color: #ef0808;
+      padding: 2px 7px;
+      border-radius: 7px;
+      margin: -1px 0px 4px -11px;
+      position: absolute;
+}
+/* sub domain */
+.cards {
+  display: flex;
+}
+.card {
+  width: 35rem;
+}
+.card-title {
+  font-weight: bolder;
+  font-size: 1.6rem;
+}
+.card-title:hover {
+  color: blue;
+}
+.card-body .btn:hover {
+  background-color: white;
+  color: black;
+}
+/* products section */
+.container1 {
+  background-color: black;
+}
+.container-child {
+  display: flex;
+  margin: auto;
+  max-width: 80vw;
+  background-color: white;
+}
+.container-child h6 {
+  display: none;
+}
+.topcard {
+  margin: 30px;
+  /* background-color: lightgray; */
+}
+.cartbtn {
+  margin-left: 4.5rem;
+}
+.cartbutton {
+  margin-left: 1.8rem;
+}
+.cartbtn:hover {
+  background-color: rgb(220, 241, 220);
+  color: darkgreen;
+}
+.cartbutton:hover {
+  background-color: lightgreen;
+  color: darkgreen;
+}
+/* last section  */
+.offers {
+  background-color: lightgray;
+  display: flex;
+  margin: 20px 0;
+}
+.offers img {
+  width: 40px;
+}
+.offer {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 40px;
+}
+.offer a {
+  color: black;
+  font-size: 0.85rem;
+}
+/* footer  */
+.footer {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+.footer img {
+  width: 10rem;
+}
+/* .foot {
+  margin: 35px;
+} */
+.foot ul {
+  display: flex;
+  list-style: none;
+}
+.foot ul li {
+    margin: 30px 15px;
+    font-size: 1.4rem;
+}
+.foot ul li a {
+  text-decoration: none;
+  color: white;
+}
+.foot ul li a:hover {
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+.foot p {
+  color: white;
+  margin-left: 27rem;
+  font-size: 1.3rem;
+}
+
+
+@media (max-width: 945px) {
+  .btn-right {
+    margin: 2px 1px;
+    background-color: black;
+    color: white;
+    padding: 3px 13px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    font-family: "Roboto", cursive;
+  }
+  .cartbtn {
+    margin-left: 0.5rem;
+    font-size: 1rem;
+  }
+  .cartbutton {
+    margin-left: 3px;
+    font-size: 0.8rem;
+    padding: 9px;
+  }
+}
+@media (max-width: 900px) {
+  .mid ul li {
+    margin: 0 6px;
+  }
+  .mid ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  .right {
+    margin: 20px 12px;
+  }
+  .right img {
+    width: 26px;
+    filter: invert(100);
+  }
+  .btn-right {
+    margin: 2px 1px;
+    background-color: black;
+    color: white;
+    padding: 4px 15px;
+    border: 2px solid grey;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    font-family: "Roboto", cursive;
+  }
+  .mid ul li a:hover {
+    background-color: white;
+    color: black;
+    font-size: 1rem;
+    padding: 3px;
+  }
+  .container-child {
+    display: flex;
+    background-color: white;
+    max-width: 100vw;
+  }
+  .badge {
+    display: inline-block;
+    padding: 0.3em.50em;
+    font-size: 0.75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+  }
+  .cartbutton {
+    margin-left: 3px;
+    font-size: 0.8rem;
+    padding: 7px;
+  }
+  .offer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 18px;
+  }
+  .footer img {
+    width: 110px;
+}
+}
+
+@media (max-width: 700px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .mx-4 {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+  .cartbtn {
+    font-size: 0.7rem;
+  }
+  .offers img {
+    width: 22px;
+  }
+  .offer a {
+    color: black;
+    font-size: 0.6rem;
+  }
+  .foot ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    /* margin-left: 8rem; */
+  }
+  .footer img {
+    width: 88px;
+    height: 88px;
+  }
+  .foot ul li {
+    margin: 3px 20px;
+  }
+  .foot p {
+    color: white;
+    margin-left: 0;
+  }
+}
+
+/* for mobile */
+@media (max-width: 450px) {
+  .mid ul li a {
+    font-size: 0.7em;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    width: 100%;
+  }
+  .topcard {
+    margin: 5px;
+  }
+  .cartbtn {
+    font-size: 0.7rem;
+  }
+  .badge {
+    display: none;
+  }
+  .container-child h6 {
+    display: block;
+    font-size: 00.9rem;
+    background-color: black;
+    color: white;
+    padding: 12px 0;
+  }
+
+  .my-4 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+  .mx-4 {
+    margin-right: 0rem !important;
+    margin-left: 0rem !important;
+  }
+  .offer {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5px;
+  }
+  .offers img {
+    width: 20px;
+  }
+  .offer a {
+    color: black;
+    font-size: 0.6rem;
+  }
+  .foot ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    /* margin-left: 8rem; */
+  }
+  .footer img {
+    width: 88px;
+    height: 88px;
+  }
+  .foot ul li {
+    margin: 3px 20px;
+      font-size: 1.2rem;
+  }
+  .foot p {
+    color: white;
+    margin-right: 10px;
+    font-size: 1.1rem;
+  }
+}

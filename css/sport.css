@@ -1,0 +1,221 @@
+.sport-cards {
+  display: flex;
+}
+.sportcard {
+  width: 18rem;
+  margin: auto;
+  border: 2px solid black;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.sportcard img:hover {
+  opacity: 0.7;
+}
+
+.sport-title {
+  background-color: rgb(241, 223, 223);
+  padding: 16px;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 1.5rem;
+}
+.sport-title:hover {
+  color: red;
+}
+.filter {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 20px;
+}
+.search {
+  background-color: #b2189a;;
+
+  height: 100%;
+  margin: 0 10px;
+}
+.searchbar {
+  position: relative;
+}
+.searchbar img {
+  position: absolute;
+  left: 72px;
+  bottom: 26px;
+  width: 20px;
+}
+.searchbar input {
+  text-align: center;
+  margin: 1rem 4rem;
+  padding: 8px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.filterbar {
+  position: relative;
+}
+.filterbar img {
+  position: absolute;
+  left: 72px;
+  bottom: 10px;
+  width: 20px;
+}
+.filterbar input{
+  margin: 0rem 4rem;
+  padding: 11px;
+  background-color: skyblue;
+  border: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+ /* dropdowns */
+.m-btn{
+  
+    margin: 1.2rem 6rem;
+}
+ .btn-dropdown{
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle; 
+    user-select: none;
+    background-color: lightgray;
+    border: 1px solid transparent;
+    padding: 0.375rem 1.75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  .btn-apply{
+    border: 2px solid white;
+    margin: .5rem 5rem;
+  
+  }
+
+  /* filter-products show */
+.products {
+  background-color: skyblue;
+  height: 100%;
+}
+.products h4 {
+  background-color: black;
+  border-radius: 30%;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  max-width: 40vw;
+  margin: 1rem auto;
+}
+.filtered-card {
+  width: 30rem;
+  display: flex;
+  background-color: black;
+  margin: 2rem 2rem;
+  border-radius: 20px;
+  padding: 2rem;
+}
+.filtered-header {
+  display: flex;
+  color: yellow;
+}
+.filtered-header img {
+  width: 60px;
+  margin-left: 8rem;
+  filter: invert(100);
+}
+.filtered-header span h5 {
+  margin-top: 15px;
+  font-weight: bolder;
+}
+.filtered-text {
+  color: darkgrey;
+}
+.btn-filter {
+  margin-left: 16rem;
+}
+@media (max-width: 870px) {
+  .sport-cards {
+    display: flex;
+    flex-direction: column;
+  }
+  .sportcard {
+    width: 40rem;
+    margin: 15px auto;
+  }
+  .products h4 {
+    background-color: black;
+    border-radius: 30%;
+    color: white;
+    text-align: center;
+    padding: 8px;
+    max-width: 40vw;
+    margin: 1rem 20px;
+}
+.filtered-card {
+  width: 23rem;
+  display: flex;
+  background-color: black;
+  margin: 1rem 1rem;
+  border-radius: 20px;
+  padding: 0.6rem;
+}
+.btn-filter {
+  margin-left: 11rem;
+}
+}
+
+@media (max-width: 650px) {
+  .sportcard {
+    width: 18rem;
+    margin: 15px auto;
+  }
+  .filter{
+    display: block;
+  }
+}
+@media(max-width:440px){
+ .searchbar input {
+    text-align: center;
+    margin: 1rem 1rem;
+    padding: 7px 0px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.filterbar input {
+
+    margin: 0rem 1rem;
+    padding: 11px 4px;
+    background-color: skyblue;
+    border: none;
+    font-weight: 600;
+    text-align: center;
+
+}
+.m-btn {
+  margin: 1.2rem 3rem;
+}
+.filtered-header img {
+  width: 48px;
+  margin-left: 0rem;
+  filter: invert(100);
+}
+.filtered-card {
+  width: 13rem;
+  display: flex;
+  background-color: black;
+  margin: 1rem 1rem;
+  border-radius: 20px;
+  padding: 0.6rem;
+}
+.btn-filter {
+  margin-left: 1rem;
+}
+.btn-apply {
+  border: 2px solid white;
+  margin: .5rem 3rem;
+}
+}

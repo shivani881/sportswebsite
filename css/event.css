@@ -1,0 +1,93 @@
+.section1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.location {
+  position: relative;
+  margin: 2rem;
+}
+.location input {
+  padding: 0.7rem 1.8rem;
+  border-radius: 9px;
+  border: 2px solid;
+}
+.location img {
+  width: 30px;
+  position: absolute;
+  left: 13rem;
+  bottom: 0.9rem;
+}
+.Search {
+  position: relative;
+  margin: 2rem 0 2rem 0;
+}
+.Search img {
+  width: 30px;
+  position: absolute;
+  left: 13rem;
+  top: 0.9rem;
+}
+.Search input {
+  padding: 0.7rem 1.8rem;
+  border-radius: 9px;
+  border: 2px solid;
+}
+.organise-btn {
+  margin: 2rem 4rem;
+  padding: 0.8rem 2rem;
+}
+
+.section2 {
+  display: flex;
+  margin: 1rem 3rem;
+}
+.eventcard {
+  width: 20rem;
+  background-color: blanchedalmond;
+  margin: 0 1em;
+}
+.ticketsbtn {
+  padding: 0.7rem 1.5rem;
+  border-radius: 30px;
+  margin: 0 0 0 9rem;
+}
+
+@media (max-width: 945px) {
+  .eventcard {
+    width: 20rem;
+    background-color: blanchedalmond;
+    margin: 0 0.13em;
+  }
+  .section2 {
+    display: flex;
+    margin: 1rem 0rem;
+  }
+}
+@media (max-width: 905px) {
+  .section2 {
+    display: flex;
+    margin: 1rem 0rem;
+    flex-direction: column;
+  }
+  .eventcard {
+    width: 100%;
+    background-color: blanchedalmond;
+    margin: 9px 0.13em;
+  }
+  .section1 {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+  }
+  .location {
+    position: relative;
+    margin: 0.5rem;
+  }
+  .organise-btn {
+    margin: 2rem 4rem;
+    padding: 0.2rem 1.4rem;
+  }
+}
